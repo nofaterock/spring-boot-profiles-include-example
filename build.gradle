@@ -2,7 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.1.4.RELEASE'
 }
 
-group = 'com.knet.fax'
+group = 'com.nofaterock.profiles'
 version = '0.0.1-SNAPSHOT'
 
 subprojects {
