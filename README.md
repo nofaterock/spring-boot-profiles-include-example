@@ -1,8 +1,8 @@
 # Spring Boot Profiles Include Example
 
 - Java 1.8.0_202
-- Gradle 5.2.1
-- Spring Boot 2.1.4
+- Gradle 6.0.1
+- Spring Boot 2.2.2
 
 ### modules
 - shared : `application-shared.yml`

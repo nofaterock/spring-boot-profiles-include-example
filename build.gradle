@@ -1,5 +1,6 @@
 plugins {
-	id 'org.springframework.boot' version '2.1.4.RELEASE'
+	id 'org.springframework.boot' version '2.2.2.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 }
 
 group = 'com.nofaterock.profiles'
@@ -19,14 +20,29 @@ subprojects {
 		}
 	}
 
-	repositories {
-		mavenCentral()
-	}
-
 	idea {
 		module {
 			outputDir = file("${buildDir}/classes/main")
 			testOutputDir = file("${buildDir}/classes/test")
 		}
+	}
+
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+		// lombok
+		compileOnly 'org.projectlombok:lombok'
+		annotationProcessor 'org.projectlombok:lombok'
+
+		// test
+		testImplementation('org.springframework.boot:spring-boot-starter-test') {
+			exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+		}
+	}
+
+	test {
+		useJUnitPlatform()
 	}
 }
