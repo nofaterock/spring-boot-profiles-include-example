@@ -11,8 +11,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
  * @author 한승룡
  * @since 2019-04-17
  */
-@ExtendWith(SpringExtension.class)
 @SpringBootTest
+@ExtendWith(SpringExtension.class)
 public class ModuleApplicationTests {
 
 	@Autowired
