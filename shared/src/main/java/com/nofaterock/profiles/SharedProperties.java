@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Getter
 @Setter
 @Component
-public class SharedModule {
+public class SharedProperties {
 
 	@Value("${name}")
 	private String name;

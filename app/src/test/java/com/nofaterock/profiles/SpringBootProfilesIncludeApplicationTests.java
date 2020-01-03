@@ -16,7 +16,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 public class SpringBootProfilesIncludeApplicationTests {
 
 	@Autowired
-	private SharedModule sharedModule;
+	private SharedProperties sharedModule;
 
 	@Value("${name}")
 	private String name;
